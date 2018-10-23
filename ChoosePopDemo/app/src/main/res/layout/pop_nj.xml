@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/parent_relative"
+    android:background="#ffffff"
+    android:layout_height="500dp">
+
+    <TextView
+        android:id="@+id/xk_sx_nj"
+        android:layout_width="match_parent"
+        android:textColor="#F82D1E"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="年级" />
+    <TextView
+        android:id="@+id/xian1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/xk_sx_nj"
+        android:background="#E5E5E4"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/xian1"
+        android:orientation="horizontal">
+
+        <com.example.administrator.choosepopdemo.Utils.ListViewAdaptWidth
+            android:id="@+id/xk_sx_lv"
+            android:divider="#E5E5E5"
+            android:layout_gravity="center"
+            android:layout_marginRight="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>
